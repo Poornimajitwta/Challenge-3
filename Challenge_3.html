@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+<meta charset="utf-8">
+<title>challenge program-3</title>
+<style>
+    * {	
+      	box-sizing: border-box;
+      	margin: 0;
+      	
+
+padding:0;
+    }
+
+    body {
+      	font-size: 19px;
+          }
+
+    header {
+      	margin: 0;
+    }
+    .main {
+      	position: relative;
+      	margin-left: 1%;
+    }
+.main img {
+      margin-left: 0%;
+      height: 350px;
+      width: auto;
+    }
+  #demo {
+
+
+
+position: absolute;
+  	margin-left:60%;
+padding-bottom:200px;
+  	transform: translate(-50%, -50%);
+  }
+footer {
+      background: grey;
+    }
+footer p {
+      padding: 10px;
+    }
+table{
+      color: darkorange;
+    }
+</style>
+</head>
+<body>
+<header>
+<a href="#home">Home</a> |
+<a href="#places">Places</a> |
+
+
+
+<a href="#gallery">Gallery</a> |
+<a href="#search">Search</a> |
+<a href="#aboutus">AboutUs</a>|
+</header>
+<br>
+<section class="main">
+<h1>
+<B>Tirumala Venkateshwara Temple</B>
+</h1>
+<br><br>
+<img src=https://menglish.sakshi.com/sites/default/files/styles/cinema_main/public/article_images/2020/06/2/venkateswara-1591100997.jpg?itok=Kcy5mwGS>
+<p id="demo"></p>
+<br>
+<p>by <U><a href="#">1JT18IS041-POORNIMA K</a></U></p>
+<br>
+<p>Venkateswara Temple is a Hindu temple situated in the hill town of Tirumala at Tirupati in Chittoor district of Andhra Pradesh, India. The temple is dedicated to Venkateswara, a form of Vishnu, who is believed to have appeared here to save mankind from trials and troubles of Kali Yuga. Hence the place has also got the name Kaliyuga Vaikuntha and the Lord here is referred to as Kaliyuga Prathyaksha Daivam. The temple is also known by other names including Tirumala Temple, Tirupati Temple, Tirupati Balaji Temple. Venkateswara is known by many other names: Balaji, Govinda, and Srinivasa. The temple is run by the body Tirumala Tirupati Devasthanams (TTD) which is under direct control of the Andhra Pradesh Government, which also appoints the head of TTD and uses the revenue from the shrine.
+
+
+
+</p>
+<br>
+<p>Year : 2021</p>
+<p>Date : 22th May</p>
+<br>
+<br>
+<h2>Reviews</h2>
+<br>
+<p style="font-weight:bold; font-size:20px"> Nice Place </p>
+<table>
+<tr>
+<td> Siri</td>
+<td> ⭐⭐⭐⭐⭐</td>
+</tr>
+</table><br>
+<p>"One of the most holiest and divine  temple on Earth. The glory cannot be described how magnanimous the power is. " </p>
+<br>
+<hr>
+<br>
+<p style="font-weight:bold; font-size:20px"> Tirumala </p>
+
+
+
+<table>
+<tr>
+<td>Pallavi</td>
+<td> ⭐⭐⭐⭐ </td>
+</tr>
+</table><br>
+<p>"The temple was of good architecture....
+It was really nice to have a visit there."</p>
+<br>
+<hr><br>
+<p style="font-weight:bold; font-size:20px">Govinda Govinda</p>
+<table>
+<tr>
+<td>Satya</td>
+<td> ⭐⭐⭐⭐⭐ </td>
+</tr>
+</table><br>
+<p> "Om namo Venkateswara..namaha ...just love this place..." </p>
+</section>
+<br>
+<section class="ending">
+
+
+
+<a href="#home">Home</a> |
+<a href="#places">Places</a> |
+<a href="#gallery">Gallery</a> |
+<a href="#aboutus">AboutUs</a> |
+</section>
+<footer>
+<p><i>Copyright &#169 2021 Poornima_K</i></p>
+</footer>
+<script>
+var var1 = setInterval(inTimer, 500);
+var fs = 5; //font size
+var ids = document.getElementById("demo");
+function inTimer()
+{
+ids.innerHTML = 'Tirumala';
+ids.setAttribute('style', "font-size: " + fs + "px; color: red");
+fs += 5;
+if (fs >= 100)
+{
+clearInterval(var1); //paused
+
+
+
+var2 = setInterval(deTimer, 500);
+}
+}
+function deTimer() //fs = 50px
+{
+fs -= 5;
+ids.innerHTML = 'NamoVenkatesaya';
+ids.setAttribute('style', "font-size: " + fs + "px; color:blue");
+if (fs == 15)
+{
+clearInterval(var2); //paused
+var1 = setInterval(inTimer, 500);
+}
+}
+</script>
+</body>
+</html>
